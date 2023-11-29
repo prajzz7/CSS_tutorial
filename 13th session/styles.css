@@ -1,0 +1,94 @@
+html{
+    font-size: 10px;
+}
+/* Tag selector targets all tags */
+body{
+    font-size: 20px;
+}
+/* Class selector ('.container') targets all class with same name  */
+.container{
+    background-color: pink;
+    text-align: center;
+    font-size: 30px;
+    width: 100px;
+}
+/* ID selector ('#') targets  ID with this name  */
+#box{
+    background-color: yellow;
+    width: 50%;
+}
+
+/* Attribute value selector */
+input[type="password"]{
+    border: 2px solid yellow;
+}
+
+/* Adjacent Sibling Selector (+): */
+/* Selects an element that is immediately preceded by a specified sibling element. */
+
+div + input{
+    border: 2px solid pink;
+}
+/* General Sibling Selector (~):
+Selects all elements that are siblings of a specified element.
+ */
+div ~ input {
+    background-color: black;
+}
+/* Descendant Combinator (whitespace):
+Selects all descendants of a specified element, regardless of their level in the hierarchy. */
+
+div li {
+    color: white
+}
+/* Child (:nth-child()):
+Selects elements based on their position within a parent.
+ */
+li:nth-child(2n-1){
+    color: red;
+}
+
+.square{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+.nested-square{
+    background-color: yellow;
+    width: 50%;
+}
+/* vw vh is for screens percentage */
+.nested-square2{
+    background-color: pink;
+    width: 50vw;
+    height: 10vh;
+}
+
+
+.em-container{
+    background-color: pink;
+    font-size: 2em;
+}
+
+.nested-em{
+    background-color: green;
+    font-size: 3rem;
+}
+/* 
+CSS units:
+1)Percentage (%):
+Relative to the size of the parent element.
+2)Viewport Height (vh) and Viewport Width (vw):
+Relative to the height and width of the viewport(window/screen size of your browser).
+3) Pixels (px):
+Absolute unit.
+Represents a single dot on a screen.
+Commonly used for fixed-size elements.
+
+ */
+
+
+
+
+
+
