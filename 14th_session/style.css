@@ -1,0 +1,19 @@
+/* CSS Reset  */
+body,h1,ul,p,li{
+    margin: 0;
+    padding: 0; 
+}
+
+ul #itemID{
+    color: red !important ; /*(1,0,1,0,1) Specificity - (!important, inline style, id, class, tag) */
+    
+}
+
+ul .item {
+    color: blue ; /* (0,0,0,1,1) */
+}
+
+
+
+
+
