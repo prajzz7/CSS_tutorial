@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inline-div{
+            background-color: aqua;
+            display: inline;
+            width: 1000px;            
+            width: 150px; /*Doesn't work in inline*/
+            height: 150px; /*Doesn't work in inline*/
+        }
+        .block-div{
+            background-color: red;
+            display: block;
+            width: 150px;
+            height: 150px;
+        }
+        .inline-block-div{
+            background-color: blueviolet;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+        }
+        span{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="inline-div">
+        Inline div
+    </div>
+    <span>
+        Span
+    </span>
+    <div class="block-div"> 
+        Block div
+    </div>
+    <span>
+        Span
+    </span>    
+    <div class="inline-block-div"> <!-- Doesnt take up full width of screen just like inline but can give width and height like block -->
+        Inline-Block
+    </div>
+    <span>
+        Span
+    </span>
+</body>
+</html>

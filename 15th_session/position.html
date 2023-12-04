@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .position-static{
+            background-color: blue;
+            position: static;
+            top: 100px;
+            
+        }
+        .position-fixed{
+            background-color: aqua;
+            position: fixed;
+            top: 20px;
+            right: 50px;
+            
+        }
+        .position-relative{
+            
+            background-color: blueviolet;
+            position: relative;
+            top: 40px;
+        }
+        .position-absolute{
+            background-color: red;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+        }
+        .parent{
+            margin-top: 100px;
+            background-color: lightblue;
+            height: 100px;
+            width: 200px;
+            position: relative;
+            z-index: 1;
+        }
+        .nested-absolute{
+            background-color: brown;
+            height: 40px;
+            width: 100px;
+            position: absolute;
+            top: -10px;
+            right: -40px;
+        }
+        .z-index{
+            background-color: red;
+            position: relative;
+            top: -30px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="position-static">
+        <!-- Position of every element is Static by default -->
+        Position static 
+    </div>
+    <div class="position-fixed">
+        <!-- The element is positioned relative to the browser window. It stays in the same place even when the page is scrolled.
+ -->
+        Position fixed
+    </div>
+    <div class="position-relative">
+        <!-- The element is positioned relative to its normal position on the page.
+ -->
+        Position relative 
+    </div>
+    <div class="position-absolute">
+        <!-- The element is positioned relative to its nearest positioned ancestor. If there is none, it is positioned relative to the initial containing block i.e. browser window.
+ -->
+        Position absolute not nested
+    </div>
+    <div class="parent">
+        Parent Div
+        <div class="nested-absolute">
+            <!-- The element is positioned relative to its nearest positioned ancestor. If there is none, it is positioned relative to the initial containing block i.e. browser window.
+ -->
+            Nested absolute 
+        </div>
+    </div>
+    <div class="z-index">
+        <!-- Highest z-index means that element will be on top of every other element on overlapping elements.  -->
+        Z-index
+    </div>
+</body>
+</html>
