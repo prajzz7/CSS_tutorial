@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        strong::before{
+            content: 'Before ';
+        }
+        strong::after{
+            content: ' After';
+        }
+        p::first-line{
+            color: red;
+        }
+        p::selection{
+            background-color: green;
+        }
+        p::first-letter{
+            font-size: 30px;
+            color: green;
+        }
+        input::placeholder{
+            color: red;
+        }
+        li::marker{
+            color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Elements</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos ipsa alias aspernatur tempore explicabo laboriosam facilis maiores! Nam, architecto. Recusandae <strong>eligendi</strong> mollitia laborum harum repudiandae, laboriosam corrupti sint delectus aspernatur?</p>
+    <input type="password" placeholder="password" id="">
+    <ul>
+        <li>Bag</li>
+        <li>Shoes</li>
+        <li>Wallet</li>
+        <li>water</li>
+        <li>bottle</li>
+        <li>key</li>
+    </ul>
+</body>
+</html>

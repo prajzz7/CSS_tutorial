@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div + ul{ /*Adjacent sibling selector*/
+            background: blue; 
+        }
+        div ~ ul{ /*general sibling selector*/
+            background-color: pink;
+        }
+        ul > li{ /*Immediate child selector*/
+            color: red;
+        }
+        div li{ /*Descendant selector*/
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        I am a div
+    </div>
+    <div>
+        <ul>
+            <li>Bag</li>
+            <li>Shoes</li>
+            <li>Wallet</li>
+        </ul>
+    </div>
+    
+    <ul>
+        <li>Hat</li>
+        <li>Shades</li>
+    </ul>
+    <div>
+        2nd div
+        <div>
+            <ul>
+                <li>
+                    Nested list
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Pseudo-classes */
+        input:focus{
+            background-color: pink;
+        }
+        ul:hover{
+            background-color: yellow;
+            color: white;
+        }
+        button:active{
+            background-color: aqua;
+        }
+        /* li:nth-child(odd){
+            color: red;
+        } */
+        /* li:not(li:last-child){
+            font-weight: bold;
+            color: red;
+        } */
+        /* li:first-child{
+            font-weight: bold;
+            
+        }
+        li:last-child{
+            font-weight: bold;
+            color: red;
+        } */
+        li:nth-of-type(2){
+            color: blue;
+        }
+        input[type="checkbox"]:checked + label{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+    <input type="text" name="" id="">
+    <button>Button</button>
+    <ul>
+        <li>Bag</li>
+        <li>Shoes</li>
+        <li>Wallet</li>
+        <li>water</li>
+        <li>bottle</li>
+        <li>key</li>
+    </ul>
+    <ul>
+        <li>Bag</li>
+        <li>Shoes</li>
+        <li>Wallet</li>
+        <li>water</li>
+        <li>bottle</li>
+        <li>key</li>
+    </ul>
+    <input type="checkbox" name="" id="">
+    <label>Cricket</label>
+    <input type="checkbox" name="" id="">
+    <label>Football</label>
+</body>
+</html>
