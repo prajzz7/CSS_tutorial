@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-auto-rows: 100px 50px;
+            grid-template-rows: minmax(100px,auto);
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            
+        }
+        .grid{
+            background-color: lightpink;
+            border: 3px solid salmon;
+        }
+        .grid-1{
+            grid-column: span 2;
+           
+        }
+        .grid-2{
+            grid-row: span 2;
+        }
+        .grid-3{
+            grid-row: span 3;
+        }
+        .grid-5{
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid grid-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate qui, vel laboriosam saepe repellat fuga rerum, eius facere, dolores sequi assumenda ullam omnis voluptatem eligendi porro quo! Quis, quos officiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat perspiciatis qui culpa, corrupti quam cupiditate nulla voluptatum sunt non perferendis quidem praesentium repellendus debitis exercitationem porro nisi id! Cumque, orem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate qui, vel laboriosam saepe repellat fuga rerum, eius facere, dolores sequi assumenda ullam omnis voluptatem eligendi porro quo! Quis, quos officiis?Lorem ipsum, dolor sit amet consectetur adipisicing eli, <similique class="Lorem"></similique></div>
+        <div class="grid grid-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit consequatur quaerat sit enim nulla quas, totam quod aspernatur in alias! Quibusdam fugit cupiditate culpa architecto, dolores delectus natus nisi omnis!</div>
+        <div class="grid grid-3">Grid3</div>
+        <div class="grid grid-4">Grid4</div>
+        <div class="grid grid-5">Grid5</div>
+        
+    </div>
+</body>
+</html>

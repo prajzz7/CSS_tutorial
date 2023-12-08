@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            background-color: lightblue;
+            height: 80vh;
+            
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-evenly; */
+              /* aligns items at the center */
+            /* align-items: center; */
+            /* justify-content: space-evenly; */
+            
+            
+        }
+        .box{
+            background-color: darkgreen;
+            width: 0;
+            height: 100px;
+            border-radius: 20px;
+        }
+        .inner1{
+            flex: 1 2 200px
+                      
+        }
+        .inner2{
+            flex: 1 1 200px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner1 box">Div1</div>
+        <div class="inner2 box">Div2</div>
+        
+        
+
+        
+    </div>
+</body>
+</html>
