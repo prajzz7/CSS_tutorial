@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body,ul{
+            margin: 0;
+        }
+        .navbar{
+            background-color: slategray;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .left span{
+            font-size: 2rem;
+        }
+        ul{
+            display: flex;
+            gap: 1rem;
+            
+        }
+        li{
+            list-style: none;
+            font-size: 2rem;
+        }
+        .right{
+            display: flex;
+            gap: 1rem;
+            font-size: 2rem;
+        }
+        section.button{
+            display: none;
+        }
+        .box{
+            background-color: red;
+            width: 100px;
+            box-sizing: border-box;
+            padding: 20px;
+            border: 10px solid black;
+            height: 100px;
+            
+        }
+        main{
+            display: flex;
+        }
+        @media (max-width:560px){
+            .left span{
+            font-size: 1rem;
+            }
+            li{
+                font-size: 1rem;
+            }
+            .right{
+                font-size: 1rem;
+            }
+        }
+        @media (max-width:360px){
+            
+            .left{
+                display: none;
+            }
+            section.button{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <section class="button">≡</section>
+        <section class="left">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            
+        </section>
+        <section class="middle">
+            
+            <span>M</span>
+            <span class="websiteHeading">Myntra</span>
+            
+        </section>
+        <section class="right">
+            <span>I</span>
+            <span>Y</span>
+            <span>F</span>
+        </section>
+    </header>
+    <main>
+        <div class="box">
+            This is my box
+        </div>
+        <div class="box">
+            This is my box
+        </div>
+        <div class="box">
+            This is my box
+        </div>
+        <div class="box">
+            This is my box
+        </div>
+        <div class="box">
+            This is my box
+        </div>
+        <div class="box">
+            This is my box
+        </div>
+    </main>
+</body>
+</html>
