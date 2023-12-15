@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+        }
+        .navbar{
+            background-color: yellowgreen;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            height: 100%;
+        }
+        .sidebar{
+            background-color: aqua;
+        }
+        .main-content{
+            background-color: wheat;
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 200px 200px 200px;
+            width: 100%;
+            /* justify-content: center;
+            align-content: center; */
+            place-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+        .card{
+            border: 2px solid grey;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        Navbar
+    </div>
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="main-content">
+            <div class="card">Card1</div>
+            <div class="card">Card2</div>
+            <div class="card">Card3</div>
+            <div class="card">Card4</div>
+            <div class="card">Card5</div>
+            <div class="card">Card6</div>
+            <div class="card">Card7</div>
+        </div>
+    </div>
+</body>
+</html>

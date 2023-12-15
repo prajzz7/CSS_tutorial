@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid #000000;
+            display: grid;
+            grid-template-areas: "nav nav "
+                                 "side main-content "
+                                 "footer footer ";
+            row-gap: 20px;  
+            column-gap: 20px; 
+            /* gap:20px;             */
+        }
+        .navbar{
+            grid-area: nav;
+            background-color: aqua;
+        }
+        .sidebar{
+            grid-area: side;
+            background-color: yellowgreen;
+        }
+        .main{
+            grid-area: main-content;
+            background-color: violet;
+        }
+        .foot{
+            background-color: tomato;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item navbar">Navbar</div> 
+        <div class="item sidebar">Sidebar</div> 
+        <div class="item main">Main-Content</div> 
+        <div class="item foot">Footer</div> 
+        
+    </div>
+</body>
+</html>
