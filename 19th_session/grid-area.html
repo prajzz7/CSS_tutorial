@@ -7,16 +7,16 @@
     <style>
         .container{
             border: 2px solid #000000;
-            display: grid;
+            display: grid; /* Make the display as grid first then use its properties            */
             grid-template-areas: "nav nav "
                                  "side main-content "
-                                 "footer footer ";
+                                 "footer footer "; /* This is the layout for the UI             */
             row-gap: 20px;  
             column-gap: 20px; 
             /* gap:20px;             */
         }
         .navbar{
-            grid-area: nav;
+            grid-area: nav; /* Connected the layout to this navbar element, so that when UI is displayed the browser knows nav in grid-template-areas means this element.           */
             background-color: aqua;
         }
         .sidebar{

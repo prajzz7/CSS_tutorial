@@ -8,10 +8,10 @@
         .container{
             border: 2px solid black;
             display: grid;
-            grid-template-columns: 150px 150px 150px;
-            grid-template-rows: 150px 150px;
-            row-gap: 20px;
-            column-gap: 20px;
+            grid-template-columns: 150px 150px 150px; /* This is the layout which says 3 columns of 150px width in 1 row          */
+            grid-template-rows: 150px 150px; /* This is the layout which says 2 rows of 150px height in 1 column and if there more elements which come in row 4th, 5th , .... and so on they will get their default height and not 150px since only 2 150px is mentioned in grid-template-rows property.        */
+            row-gap: 20px; /* Gap between rows in the grid           */
+            column-gap: 20px; /* Gap between columns in the grid           */
         }
         .item{
             border: 2px solid brown;
@@ -19,12 +19,12 @@
             
         }
         .item-5{
-            /* grid-row: 2/3; */
-            grid-row-start: 2;
-            grid-row-end: 3;
+            /* grid-row: 2/3; */ /* Can use this property instead of the below 2 properties i.e grid-row-start and grid-row-end         */
+            grid-row-start: 2; /* Starting line for the row i.e 2          */
+            grid-row-end: 3;    /* Ending line for the row i.e 3          */
             /* grid-column: 3/4; */
-            grid-column-start: 3;
-            grid-column-end: 5;
+            grid-column-start: 3; /* Starting line for the column i.e 3          */
+            grid-column-end: 5; /* Ending line for the column i.e 5          */
         }
         .item-1{
             grid-column: 1/4;

@@ -18,7 +18,7 @@
             height: 100px;
             width: 100px;
             border-radius: 50%;
-            animation: scaling 3s ease-out infinite alternate-reverse pause;
+            animation: scaling 3s ease-out infinite alternate-reverse pause; /* Defines what kind of animation is needed. scaling means the name of animation which is efined below after the @keyframes keyword. infinite means it will run infinitely. pause means the execution is paused so you have to set it to running instead of pause.        */
             
         }
         .ball:hover{
@@ -27,7 +27,7 @@
 
         @keyframes scaling {
             0%{
-                transform: scale(1);
+                transform: scale(1); /* These %s work according to the timeframe. So if timeframe is give 10s then initially the element will scale 1 which is normal size then on 5s it will be 1.5 times its size then in the end at 10s it will be scale(2) so twice its original size. You can add as many percentages as you want.        */
             }
             50%{
                 transform: scale(1.5);

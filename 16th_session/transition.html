@@ -10,8 +10,8 @@
             
             width: 100%;
             height: 100%;
-            transform: scaleX(0.1);
-            transition: background-color 1s ease-out;
+            transform: scaleX(0.1); /*  scale changes the size of an element */
+            transition: background-color 1s ease-out; /* Here the background-color is given transition of 1s so the background-color will change slowly/smoothly for 1s rather than quickly changing.  */
         }
         button{
             display: flex;
@@ -31,7 +31,7 @@
         } */
         .input2{
             display: block;
-            transform: rotate(270deg);
+            transform: rotate(270deg); /*  rotates the lement by given degrees */
         }
         .input3{
             display: block;
@@ -39,14 +39,14 @@
         }
         .input4{
             margin-top: 100px;
-            transform: skew(80deg);
+            transform: skew(80deg); /*  slants the lines */
         }
         input{
             transition: transform 0.5s ease;
         }
         input:focus{
-            transform: translateX(200px) scalex(1.5);
-            transition: transform 0.5s ease-in;
+            transform: translateX(200px) scaleX(1.5); /* translateX shift the elemet by 200px to the right i.e on X-axis. translateY will do it on Y axis.  */
+            transition: transform 0.5s ease-in; /* puts transition of 0.5s on transform  */
         }
         
         
