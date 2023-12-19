@@ -9,7 +9,7 @@
         .container {
             border: 2px solid black;
             display: grid;
-            grid-template-columns: repeat(3, minmax(100px,1fr));
+            grid-template-columns: repeat(3, minmax(100px,1fr)); /* This says that repeat the 1 fr size 3 times. SO there will be 3 columns of 1 fr width. and when you lower the screen size the min width will stay 100px            */
             
         }
         .item{
@@ -17,7 +17,7 @@
             height: 100px;
         }
         .item-1{
-            grid-column: 1/4;
+            grid-column: 1/4; /* Starting of this grid column is 1st line and it ends on the 4th line, so the column will be this much big from 1st to 4th line .          */
         }
     </style>
 

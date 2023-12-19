@@ -6,14 +6,14 @@
     <title>Document</title>
     <style>
         /* Pseudo-classes */
-        input:focus{
+        input:focus{    /* :focus is a psuedo class which is for focusing on an input in this situation   */
             background-color: pink;
         }
-        ul:hover{
+        ul:hover{ /*  when an element is hovered  */
             background-color: yellow;
             color: white;
         }
-        button:active{
+        button:active{ /* when the button is clicked  */
             background-color: aqua;
         }
         /* li:nth-child(odd){
@@ -31,10 +31,10 @@
             font-weight: bold;
             color: red;
         } */
-        li:nth-of-type(2){
+        li:nth-of-type(2){ /*  selects the n-th element from that element list. So 2nd list item in this case */
             color: blue;
         }
-        input[type="checkbox"]:checked + label{
+        input[type="checkbox"]:checked + label{ /*  :checked is for checkboxes that are checked */
             background-color: grey;
         }
     </style>

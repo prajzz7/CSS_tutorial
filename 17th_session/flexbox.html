@@ -6,15 +6,14 @@
     <title>Document</title>
     <style>
         .outer{
-            background-color: lightblue;
+            background-color: lightblue; 
             height: 80vh;
             
-            display: flex;
-            flex-direction: row;
-            /* justify-content: space-evenly; */
-              /* aligns items at the center */
-            /* align-items: center; */
-            /* justify-content: space-evenly; */
+            display: flex; /*    Make thedisplay flex before writing its properties */
+            flex-direction: row; /*  Changes the direction of elements in horizontal direction i.e in 1 row  */
+            /* justify-content: space-evenly; */ /*  Defines how items should be aligned horizontally in flex-direction: row and vertically in flex-direction: column  */               
+            /* align-items: center; */ /*  Defines how items should be aligned vertically in flex-direction: row and horizontally in flex-direction: column  */
+            /* justify-content: space-evenly; */ 
             
             
         }
@@ -25,7 +24,7 @@
             border-radius: 20px;
         }
         .inner1{
-            flex: 1 2 200px
+            flex: 1 2 200px /*   1 is for flex-grow i.e how much should an element grow when the screen size increases, 2 is for flex-shrink i.e how much should an element shrink when screen size decreases ,and 200px is for flex-basis i.e min-width in simple terms */
                       
         }
         .inner2{
