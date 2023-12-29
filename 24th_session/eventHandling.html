@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button onclick="submitHandler" id="btn">Submit</button>
+    <script>
+        const btn = document.getElementById('btn')
+        btn.addEventListener('mouseleave', submitHandler)
+        function submitHandler(){
+            console.log('Submitted')
+        }
+
+        const input = document.getElementById('input')
+        // input.addEventListener('input', inputChange)
+        // function inputChange(){
+        //     console.log('changed')
+        // }
+        input.addEventListener('change',inputChange)
+        function inputChange(event){
+            console.log(event.target.value)
+        }
+    </script>
+</body>
+</html>

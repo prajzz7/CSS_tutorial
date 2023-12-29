@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="1stSibling"></div>
+    <ul>
+        <li class="list-item" id="listId"><h1>Bag</h1></li>
+        <li class="list-item">shoe</li>
+        <li class="list-item">hat</li>
+        <li class="list-item">belt</li>
+    </ul>
+    <div id="lastSibling">
+        
+    </div>
+    <script>
+        // console.log(document.body)
+        // console.log( document.getElementById('listId').textContent)
+        // var list = document.getElementsByClassName('list-item')
+        // console.log(list)
+        // for(let i=0; i<list.length; i++){
+        //     console.log(list[i].textContent)
+        // }
+        // var ul = document.getElementsByTagName('ul')
+        // console.log(ul)
+        // document.querySelector('ul')
+        // document.querySelector('#listId')
+        // const list = document.querySelectorAll('.list-item')
+        // console.log(list)
+        // var third_item = document.querySelector('.list-item:nth-child(1)')
+        // console.log(third_item.innerHTML)
+        // const list = document.querySelector('ul')
+        // console.log(list.innerHTML)
+        // // list.innerHTML = '<h1>B</h1>'
+        // list.style.backgroundColor = 'red'
+        // list.style.border = '10px solid black'
+
+        // const li = document.getElementById('listId')
+        // const ul = li.parentElement
+        //     ul.style.border = '2px solid red'
+
+        const ul = document.querySelector('ul')
+        // console.log(ul.children[3])
+        // console.log(ul.previousElementSibling)
+        // console.log(ul.nextElementSibling)
+        const divLast = document.getElementById('lastSibling')   
+        const h1 = document.createElement('h1')
+        h1.textContent = 'Fetched Header'
+        divLast.append(h1)
+
+        const p = document.createElement('p')
+        p.innerHTML = '<h2>Some paragraph</h2>'
+        divLast.append(p)
+        divLast.removeChild(h1)
+        divLast.parentElement.insertBefore(h1,divLast.nextSibling)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 5px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <label for="">Male</label>
+        <input type="radio" class="input" name="gender" id="" value="male">
+        <label for="">Female</label>
+        <input type="radio" class="input" name="gender" id="" value="female">
+        <label for="">Others</label>
+        <input type="radio" class="input" name="gender" id="" value="others">
+    </div>
+
+
+    <script>
+        const gender = document.getElementsByClassName('input')
+        console.log(gender)
+        for (let i = 0; i < gender.length; i++) {
+            gender[i].addEventListener('change', result)
+            function result() {
+                console.log(gender[i].value)
+            }
+        }
+
+        const div = document.getElementById('container')
+        div.classList.add('box','box1','box2')
+        div.className = 'box box1 box2'
+        div.id = 'div1'
+    </script>
+</body>
+
+</html>
