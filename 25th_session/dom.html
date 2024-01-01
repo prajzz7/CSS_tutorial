@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    
+</head>
+<body>
+    <input type="text" class="username" id="userId">
+    <button id="btn">Submit</button>
+    <ul class="list">
+        <li class="list-item">Bag</li>
+        <li class="list-item">Chips</li>
+        <li class="list-item">Fruit</li>
+        <li class="list-item">Belt</li>
+
+    </ul>
+    <div class="outside">
+        
+    </div>
+    <script>
+        var username = document.querySelector('input')
+        var button = document.getElementById('btn')
+        console.log(username, button)
+        button.addEventListener('click', handleClick)
+        function handleClick(event){
+            console.log(username.value)
+        }
+
+        // var list = document.getElementsByClassName('list-item')
+        var list = document.querySelectorAll('.list-item')
+        
+        for(let i =0; i<list.length;i++){
+            console.log(list[i].textContent)
+            list[i].innerHTML = '<h1>Changed</h1>'
+        }
+
+
+        var outsideData = 'BackendData'
+        const newDiv = document.createElement('div')
+        newDiv.textContent = outsideData 
+        var outside = document.querySelector('.outside')
+        outside.append(newDiv) 
+        outside.removeChild(newDiv)
+        
+    </script>
+</body>
+</html>
