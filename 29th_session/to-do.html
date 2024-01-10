@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <form id="formArea" action="">
+        <input type="text" id="inputVal" />
+        <button id="btn">Add Task</button>
+    </form>
+    <ul id="task-list">
+
+    </ul>
+    <script>
+        var taskItem = document.getElementById('inputVal')
+        var button = document.getElementById('btn')
+        var ul = document.getElementById('task-list')
+        var taskArray = []
+        btn.addEventListener('click',function(e){
+            e.preventDefault()
+            taskArray.push(taskItem.value)
+            ul.innerHTML = ''
+            taskArray.forEach((item)=>{
+                var li = document.createElement('li')
+                li.textContent = item
+
+                ul.appendChild(li)
+            })
+        })
+    </script>
+</body>
+</html>
